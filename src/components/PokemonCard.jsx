@@ -1,8 +1,11 @@
+import "./PokemonCard.css";
+
 function PokemonCard() {
     return (
-        <div className="pokemon-card">
+        <div className="card">
             <h2>Carchacrok</h2>
             <img
+                className="card-img"
                 src={
                     "https://www.pokepedia.fr/images/thumb/6/69/Carchacrok-DEPS.png/800px-Carchacrok-DEPS.png"
                 }

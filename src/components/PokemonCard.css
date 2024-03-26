@@ -1,13 +1,14 @@
 .card {
     width: 200px;
     padding: 1rem;
-    background-color: lightgreen;
+    background-color: rgb(81, 69, 100);
     border-radius: 5px;
     box-shadow: 0px 0px 5px gray;
     color: white;
     font-size: 1.6rem;
     text-align: center;
     text-shadow: 0px 0px 5px gray;
+    margin-left: 30%;
 }
 
 .card-img {
