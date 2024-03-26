@@ -1,22 +1,22 @@
 import "./PokemonCard.css";
-
+const pokemonList = [
+    {
+        name: "Carchacrok",
+        imgSrc: "https://www.pokepedia.fr/images/thumb/6/69/Carchacrok-DEPS.png/800px-Carchacrok-DEPS.png",
+    },
+    {
+        name: "mew",
+    },
+];
 function PokemonCard() {
     return (
         <div className="card">
-            <h2>Carchacrok</h2>
+            <h2>{pokemonList[0].name}</h2>
             <img
                 className="card-img"
-                src={
-                    "https://www.pokepedia.fr/images/thumb/6/69/Carchacrok-DEPS.png/800px-Carchacrok-DEPS.png"
-                }
+                src={pokemonList[0].imgSrc}
                 alt="Pikachu"
             />
-            <ul>
-                <li>Type: dragon/sol</li>
-                <li>HP: 50</li>
-                <li>Attack: ???</li>
-                <li>Defense: ???</li>
-            </ul>
         </div>
     );
 }
