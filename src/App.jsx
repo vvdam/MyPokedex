@@ -40,11 +40,23 @@
 import PokemonCard from "./components/PokemonCard.jsx";
 
 function App() {
+    const pokemonList = [
+        {
+            name: "Carchacrok",
+            imgSrc: "https://www.pokepedia.fr/images/thumb/6/69/Carchacrok-DEPS.png/800px-Carchacrok-DEPS.png",
+        },
+        {
+            name: "mew",
+            imgSrc: "https://www.pokepedia.fr/images/thumb/1/16/Mew-DEPS.png/800px-Mew-DEPS.png",
+        },
+    ];
     return (
-        <div>
-            <PokemonCard />
+        <div className="conteneur">
+            <PokemonCard props={pokemonList[0]}/>
+            <PokemonCard props={pokemonList[1]}/>
         </div>
     );
 }
+
 
 export default App;

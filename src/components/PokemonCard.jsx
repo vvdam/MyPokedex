@@ -1,15 +1,7 @@
 import "./PokemonCard.css";
-const pokemonList = [
-    {
-        name: "Carchacrok",
-        imgSrc: "https://www.pokepedia.fr/images/thumb/6/69/Carchacrok-DEPS.png/800px-Carchacrok-DEPS.png",
-    },
-    {
-        name: "mew",
-    },
-];
-function PokemonCard() {
-    const pokemon = pokemonList[0];
+
+function PokemonCard(props) {
+    const pokemon = props.props;
     return (
         <div >
             {/* <img
