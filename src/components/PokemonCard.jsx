@@ -1,7 +1,10 @@
 import "./PokemonCard.css";
+import PropTypes from "prop-types";
 
-function PokemonCard(props) {
-    const pokemon = props.props;
+
+function PokemonCard(pokemonprops) {
+
+    const pokemon = pokemonprops.props;
     return (
         <div >
             {/* <img
@@ -18,5 +21,10 @@ function PokemonCard(props) {
         </div>
     );
 }
-
+PokemonCard.propTypes = {
+    props:PropTypes.shape({
+        name:PropTypes.string.isRequired,
+        imgSrc:PropTypes.string,
+    }).isRequired,
+}
 export default PokemonCard;
