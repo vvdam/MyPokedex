@@ -1,7 +1,7 @@
-// import { useState } from "react";
+
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-// import "./App.css";
+//
 
 // function App() {
 //     const [count, setCount] = useState(0);
@@ -38,8 +38,11 @@
 
 // export default App;
 import PokemonCard from "./components/PokemonCard.jsx";
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+    const [index, setIndex] = useState(0);
     const pokemonList = [
         {
             name: "Carchacrok",
@@ -49,11 +52,18 @@ function App() {
             name: "mew",
             imgSrc: "https://www.pokepedia.fr/images/thumb/1/16/Mew-DEPS.png/800px-Mew-DEPS.png",
         },
+        {
+            name: "Charizard",
+            imgSrc: "https://static.wikia.nocookie.net/pokemonunite/images/3/3a/Charizard_art.png",
+        },
     ];
     return (
+
         <div className="conteneur">
             <PokemonCard props={pokemonList[0]}/>
             <PokemonCard props={pokemonList[1]}/>
+            <PokemonCard  props={pokemonList[2]} />
+        
         </div>
     );
 }
