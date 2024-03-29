@@ -40,29 +40,51 @@
 import PokemonCard from "./components/PokemonCard.jsx";
 import "./App.css";
 import { useState } from "react";
-
+import State from "./components/State.jsx";
 function App() {
     const [index, setIndex] = useState(0);
     const pokemonList = [
         {
             name: "Carchacrok",
             imgSrc: "https://www.pokepedia.fr/images/thumb/6/69/Carchacrok-DEPS.png/800px-Carchacrok-DEPS.png",
+            att:100,
+            def:100,
+            hp:100,
+            types:"dragon ground"
         },
         {
             name: "mew",
             imgSrc: "https://www.pokepedia.fr/images/thumb/1/16/Mew-DEPS.png/800px-Mew-DEPS.png",
+            att:100,
+            def:100,
+            hp:100,
+            types:"psychic"
         },
         {
             name: "Charizard",
             imgSrc: "https://static.wikia.nocookie.net/pokemonunite/images/3/3a/Charizard_art.png",
+            att:100,
+            def:100,
+            hp:100,
+            types:"fire fly"
         },
     ];
     return (
-
-        <div className="conteneur">
+        <div className="app">
+        {/* <div className="conteneur">
             <PokemonCard props={pokemonList[0]}/>
             <PokemonCard props={pokemonList[1]}/>
             <PokemonCard  props={pokemonList[2]} />
+        
+        </div> */}
+
+        <div className="img"><img src="https://static.thenounproject.com/png/1390899-200.png" alt="" /></div>
+        <div className="conteneur"><PokemonCard props={pokemonList[index]} /><State props={pokemonList[index]}/> </div>
+        
+        <div><button onClick={() => setIndex((index) => (index === 0 ? pokemonList.length - 1 : index - 1))}>precedent</button>
+        {/* marche pas  */}
+        <button onClick={() => setIndex((index) => (index === pokemonList.length -1 ? index=0 : index + 1))}>suivant</button></div>
+        
         
         </div>
     );

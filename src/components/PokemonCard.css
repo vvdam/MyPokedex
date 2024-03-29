@@ -30,4 +30,12 @@
     margin-bottom: 0.5rem;
 }
 
+p{
+    color: #212121;
+    text-wrap:  wrap;
+}
 
+.state{
+    width: 150px;
+    height: 250px;
+}

@@ -47,4 +47,16 @@
   flex-direction: row;
   top:5%;
   width: 100%s;
+  gap: 20px;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.img{
+  align-items: center;
 }
