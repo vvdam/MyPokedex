@@ -41,6 +41,8 @@ import PokemonCard from "./components/PokemonCard.jsx";
 import "./App.css";
 import { useState } from "react";
 import State from "./components/State.jsx";
+import NavBar from "./components/NavBar.jsx";
+
 function App() {
     const [index, setIndex] = useState(0);
     const pokemonList = [
@@ -81,11 +83,8 @@ function App() {
         <div className="img"><img src="https://static.thenounproject.com/png/1390899-200.png" alt="" /></div>
         <div className="conteneur"><PokemonCard props={pokemonList[index]} /><State props={pokemonList[index]}/> </div>
         
-        <div><button onClick={() => setIndex((index) => (index === 0 ? pokemonList.length - 1 : index - 1))}>precedent</button>
-        {/* marche pas  */}
-        <button onClick={() => setIndex((index) => (index === pokemonList.length -1 ? index=0 : index + 1))}>suivant</button></div>
         
-        
+        <NavBar Setindex={setIndex} pokindex={index} tab={pokemonList}/>
         </div>
     );
 }
