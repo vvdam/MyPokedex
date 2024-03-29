@@ -42,6 +42,7 @@ import "./App.css";
 import { useState } from "react";
 import State from "./components/State.jsx";
 import NavBar from "./components/NavBar.jsx";
+import { useEffect } from "react";
 
 function App() {
     const [index, setIndex] = useState(0);
@@ -52,7 +53,8 @@ function App() {
             att:100,
             def:100,
             hp:100,
-            types:"dragon ground"
+            types:"dragon ground",
+            sound:"RRRR"
         },
         {
             name: "mew",
@@ -60,7 +62,8 @@ function App() {
             att:100,
             def:100,
             hp:100,
-            types:"psychic"
+            types:"psychic",
+            sound:"oooooo"
         },
         {
             name: "Charizard",
@@ -68,9 +71,14 @@ function App() {
             att:100,
             def:100,
             hp:100,
-            types:"fire fly"
+            types:"fire fly",
+            sound:"aaaaa"
         },
     ];
+
+
+
+
     return (
         <div className="app">
         {/* <div className="conteneur">

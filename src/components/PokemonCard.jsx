@@ -1,12 +1,15 @@
 import "./PokemonCard.css";
+import { useEffect } from "react";
+
 
 function PokemonCard(props) {
         
 
     const pokemon = props.props;
-    console.log(pokemon);
-        console.log(pokemon.name);
-        console.log(pokemon.imgSrc);
+    
+
+    
+
     return (
         <div >
             
