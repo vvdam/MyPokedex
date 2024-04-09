@@ -4,13 +4,13 @@ import { useEffect } from "react";
 // setIndex,index,tab,
 
 function NavBar ({Setindex,pokindex,tab}){
-    useEffect(
-        () => {
-          alert(tab[pokindex].sound);
-        },
-        [tab[pokindex].sound],[]
-      );
-
+    // useEffect(
+    //     () => {
+    //       alert(tab[pokindex].sound);
+    //     },
+    //     [tab[pokindex].sound],[]
+    //   );
+    console.log(pokindex)
     return(
         <div><button onClick={() => Setindex((pokindex <=0 ? tab.length - 1 : pokindex - 1))}>precedent</button>
         {/* marche pas  */}

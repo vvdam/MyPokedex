@@ -59,18 +59,18 @@ function App() {
         {
             name: "mew",
             imgSrc: "https://www.pokepedia.fr/images/thumb/1/16/Mew-DEPS.png/800px-Mew-DEPS.png",
-            att:100,
+            att:10,
             def:100,
-            hp:100,
+            hp:10,
             types:"psychic",
             sound:"oooooo"
         },
         {
             name: "Charizard",
             imgSrc: "https://static.wikia.nocookie.net/pokemonunite/images/3/3a/Charizard_art.png",
-            att:100,
+            att:50,
             def:100,
-            hp:100,
+            hp:200,
             types:"fire fly",
             sound:"aaaaa"
         },
